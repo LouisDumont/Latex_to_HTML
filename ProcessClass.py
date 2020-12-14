@@ -27,7 +27,7 @@ CLASSES = {
                                lambda content: f"<h2>{content}</h2>"),
     "comment": ProcessClass("comment",
                             lambda line: line.startswith("%"),
-                            lambda line: None,),
+                            lambda line: None),
     "blank_line": ProcessClass("blank_line",
                                lambda line: line.startswith("\n"),
                                lambda line: None),
